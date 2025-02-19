@@ -1,7 +1,7 @@
 // src/services/employeeService.ts
 import { Employee, ApiResponse } from '@/types';
 
-const BASE_URL = 'https://localhost:7140/api/employee';
+const BASE_URL = 'https://localhost:7140/api/Employee';
 
 export async function fetchEmployees(): Promise<ApiResponse<Employee[]>> {
   const response = await fetch(BASE_URL);
